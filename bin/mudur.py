@@ -11,7 +11,7 @@
 #
 
 """
-Pardus booting and initialization system written in Python.
+Pisi Linux booting and initialization system written in Python.
 """
 
 import os
@@ -494,7 +494,7 @@ class Ui:
         print self.UNICODE_MAGIC
         if os.path.exists("/etc/pisilinux-release"):
             release = load_file("/etc/pisilinux-release").rstrip("\n")
-            print "\x1b[1m  %s  \x1b[0;36mhttp://www.pisilinux.org\x1b[0m" \
+            print "\x1b[1m  %s  \x1b[0;36mhttps://pisilinux.org\x1b[0m" \
                     % release
         else:
             self.error(_("Cannot find /etc/pisilinux-release"))
